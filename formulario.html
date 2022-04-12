@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>formulario</title>
+    </head>
+
+    <body>
+
+        <h2>Formulário de Cadastro</h2>
+
+        <form>
+            <fieldset style="width: 35%;">
+                <legend>Dados Pessoais</legend>
+                
+                <label for="codigo">Código:</label>
+                <input type="number" id="codigo" placeholder="001" disabled="1" style="width: 20%;"> <br>
+                
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" style="width: 50%;"> <br>
+
+                <label for="senha">Senha:</label>
+                <input type="password" id="senha" style="width: 15%;"> <br>
+
+                <label for="sexo">Sexo:</label>
+                <input type="radio" id="sexo">Masculino</input>
+                <input type="radio" id="sexo">Feminino</input> <br>
+
+                <label for="idade">Idade:</label>
+                <input type="number" id="idade" style="width: 10%;"> <br>
+
+                <label for="cartao_credito">Cartão de Crédito:</label> <br>
+                <select id="cartao_credito" multiple="multiple">
+                    <option value="mastercard">MasterCard</option>
+                    <option value="visa">Visa</option>
+                    <option value="american_express">American Express</option>
+                </select>
+            </fieldset>
+
+            <fieldset style="width: 35%;">
+                <legend>Dados Profissionais</legend>
+
+                <label for="cargo">Cargo:</label>
+                <select id="cargo" size="1">
+                    <option value="analistajunior">Analista Júnior</option>
+                    <option value="analistapleno">Analista Pleno</option>
+                    <option value="analistasenior">Analista Sênior</option>
+                </select> <br>
+                
+                <label for="dadospessoais">Dados Pessoais:</label> <br>
+                <input type="checkbox" id="dadospessoais"> Fumante</input> <br>
+                <input type="checkbox" id="dadospessoais"> Pratica Exercícios Físicos</input> <br>
+                <input type="checkbox" id="dadospessoais"> Consome Bebida Álcoólica</input> <br>
+
+                <label for="experienciasprofissionais">Experiências Profissionais:</label> <br>
+                <textarea id="experiencia_profissional" cols="50" rows="3" placeholder="Data inicio/Data fim/Empresa/Cargo"></textarea>
+            </fieldset>
+        
+            <input type="reset"id="reset">
+            <input type="submit" id="submit" onclick="alert('Formulário Enviado')">
+
+        </form>        
+    </body>
+</html>

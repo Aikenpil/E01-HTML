@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <title>tutorial_c</title>
+    </head>
+
+    <body>
+        
+        <div>
+            <h2>Introducao</h2>
+
+            <p> Uma estrutura condicional define um bloco de operações de acordo com uma escolha. Existem quatro estruturas condicionais:     
+                <ul>
+                    <li>if;</li>
+                    <li>else;</li>
+                    <li>else if;</li>
+                    <li>switch.</li>
+                </ul>
+            </p>
+
+        </div>
+
+        <div>
+            <h2>Estruturas Condicionais</h2>
+            
+            <b>O if</b>
+            <p>A estrutura segue a seguinte sintaxe: 
+                <code>
+                    <pre>
+                        if(bloco de condição){ bloco de operações; }
+                    </pre>
+                </code>
+            </p>
+            <p style="margin-right: 50%;">A condição pode assumir um valor verdadeiro ou falso.
+                O bloco de operações só é executado se a condição for
+                verdadeira.
+                Um bloco de operações pode conter outros blocos de
+                operações, ou seja, pode haver estruturas de seleção
+                aninhadas.</p>
+
+            <b>O else</b>
+            <p>A estrutura segue a seguinte sintaxe: 
+                <code>
+                    <pre>
+                        if(bloco de condição){ bloco de operações; }
+                        else{ bloco de operações; }
+                    </pre>
+                </code>
+            </p>
+            <p style="margin-right: 50%;">Uma versão mais completa da cláusula if, contém blocos de
+                operações tanto na parte verdadeira quanto na falsa.
+                O bloco de operações associado a condição falsa começa com
+                a cláusula else.</p>    
+
+            <b>O else if</b>    
+            <p> A estrutura segue a seguinte sintaxe:
+                <code>
+                    <pre>
+                        if(bloco de condição){ bloco de operações; }
+                        else if(bloco de condição){ bloco de operações; }
+                    </pre>
+                </code>
+            </p>
+            <p style="margin-right: 50%;">Verifica uma nova condição caso a anterior tenha sido falsa.
+                Caso a anterior tenha sido verdadeira ele não é verificado e executado.
+            </p>
+
+            <b>O switch case</b>
+            <p> A estrutura segue a seguinte sintaxe:
+                <code>
+                    <pre>
+                        switch(expressão integral){
+                            case valor 1:
+                            //bloco de operações
+                            break;
+                            case valor n:
+                            //bloco de operações
+                            break;
+                            default:
+                            //bloco de operações
+                            break;
+                        }
+                    </pre>
+                </code>
+            </p>
+            <p style="margin-right: 50%;">Uma alternativa multi-escolha para o if.
+            Dispensa o uso de vários if's seguidos e consequentemente abaixa a complexidade do código.</p>
+        </div>
+
+        <div>
+            <h2>Exemplos</h2>
+            
+            <b>if, else if e else</b>
+            <p>
+                <code>
+                    <pre>
+                        if(X > Y){
+                            printf("O maior eh X");
+                        } else if(Y > X){
+                            printf("O maior eh Y");
+                        } else {
+                            printf("Os numeros sao iguais");
+                        }
+                    </pre>
+                </code>
+            </p>
+
+            <b>switch case</b>
+            <p>
+                <code>
+                    <pre>
+                        switch(opcao_menu){
+                            
+                            case 0:
+                            printf("voce saiu do menu")
+                            return 0;
+                            break;
+                            
+                            case 1:
+                            funcao_1();
+                            break;
+                            
+                            case 2:
+                            funcao_2();
+                            break;
+
+                            case 3:
+                            funcao_3();
+                            break;
+
+                            default:
+                            funcao_default();
+                            break;
+                        }
+                    </pre>
+                </code>
+            </p>
+
+        </div>
+
+    </body>
+</html>
